@@ -1,151 +1,106 @@
+<!-- COLOQUE ESTE CONTEÚDO EM SEU index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Édpo Jorge | Business Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Édpo Jorge | Kärcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <style>
     body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      height: 100vh;
     }
-
     .card {
-      background-color: white;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
       max-width: 420px;
       width: 100%;
-      border-radius: 8px;
-      padding: 32px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      border-left: 10px solid #f7e801;
+      border-left: 10px solid #ffd500;
     }
-
     .logo {
-      max-width: 140px;
+      width: 120px;
       margin-bottom: 20px;
     }
-
     h1 {
-      font-size: 24px;
-      margin: 0 0 8px;
+      font-size: 22px;
+      margin: 0;
     }
-
-    .role {
-      font-size: 14px;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 24px;
+    h2 {
+      font-size: 15px;
+      font-weight: 500;
+      color: #444;
+      margin: 5px 0 20px;
     }
-
     .info {
       display: flex;
       align-items: center;
+      gap: 10px;
       margin-bottom: 12px;
-      color: #333;
+    }
+    .info a {
+      color: #0073b1;
+      text-decoration: none;
       font-size: 14px;
     }
-
-    .info svg {
-      margin-right: 8px;
-      min-width: 16px;
-    }
-
-    .info a {
-      color: #0078d4;
-      text-decoration: none;
-    }
-
-    .info a:hover {
-      text-decoration: underline;
-    }
-
-    .buttons {
-      margin-top: 28px;
+    .socials {
       display: flex;
-      flex-direction: column;
-      gap: 12px;
+      justify-content: space-between;
+      margin-top: 20px;
     }
-
-    .btn {
-      display: inline-flex;
+    .socials a {
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 16px;
-      font-size: 15px;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
+      padding: 10px;
+      flex: 1;
+      margin: 0 5px;
+      border-radius: 12px;
       color: white;
-      transition: background-color 0.2s ease;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
     }
-
-    .btn svg {
-      margin-right: 8px;
-    }
-
-    .whatsapp {
-      background-color: #25d366;
-    }
-
-    .whatsapp:hover {
-      background-color: #1ebe57;
-    }
-
-    .chat {
-      background-color: #4285f4;
-    }
-
-    .chat:hover {
-      background-color: #3367d6;
-    }
+    .whatsapp { background: #25D366; }
+    .message { background: #4285F4; }
+    svg { margin-right: 6px; min-width: 16px; }
   </style>
 </head>
 <body>
   <div class="card">
-    <img class="logo" src="https://s1.kaercher-media.com/versions/2025.2.0/static/img/kaercher_logo.svg" alt="Kärcher Logo" />
-
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Karcher-Logo.svg/2560px-Karcher-Logo.svg.png" alt="Kärcher Logo" class="logo" />
     <h1>Édpo Jorge</h1>
-    <div class="role">Product Owner for Automation, Data Science & AI LATAM</div>
+    <h2>Product Owner | BI & IA LATAM</h2>
 
     <div class="info">
-      <!-- Email -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034z"/>
-      </svg>
-      edpo.jorge@karcher.com
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-envelope" viewBox="0 0 16 16"><path d="..."/></svg>
+      <a href="mailto:edpo.jorge@karcher.com">edpo.jorge@karcher.com</a>
     </div>
-
     <div class="info">
-      <!-- LinkedIn -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0A66C2" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="..."/></svg>
       <a href="https://www.linkedin.com/in/edpojorge" target="_blank">/edpojorge</a>
     </div>
-
     <div class="info">
-      <!-- Instagram -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0z"/>
-        <path d="M8 3.88a4.12 4.12 0 1 0 0 8.24 4.12 4.12 0 0 0 0-8.24zM8 10.88a2.88 2.88 0 1 1 0-5.76 2.88 2.88 0 0 1 0 5.76zm4.38-6.76a.96.96 0 1 1-1.92 0 .96.96 0 0 1 1.92 0z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#E1306C" class="bi bi-instagram" viewBox="0 0 16 16"><path d="..."/></svg>
       <a href="https://www.instagram.com/j.b_ed?igsh=MXAwMmI1Yjh4b3Jybw==" target="_blank">@j.b_ed</a>
     </div>
 
-    <div class="buttons">
-      <a class="btn whatsapp" href="https://wa.me/5511956565659" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.2 0 0 7.2 0 16c0 2.8.7 5.4 2 7.7L0 32l8.4-2.2c2.1 1 4.5 1.6 7.6 1.6 8.8 0 16-7.2 16-16S24.8 0 16 0z"/></svg>
-        WhatsApp Me
+    <div class="socials">
+      <a href="https://wa.me/5511956565659" class="whatsapp" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="..."/></svg>
+        WhatsApp
       </a>
-
-      <a class="btn chat" href="https://mail.google.com/chat/u/0/#chat/wt/edpo.jorge@karcher.com" target="_blank">
-        💬 Google Chat
+      <a href="mailto:edpo.jorge@karcher.com" class="message" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chat-left-dots" viewBox="0 0 16 16"><path d="..."/></svg>
+        Message
       </a>
     </div>
   </div>
