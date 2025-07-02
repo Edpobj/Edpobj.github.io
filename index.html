@@ -1,107 +1,114 @@
-<!-- COLOQUE ESTE CONTEÚDO EM SEU index.html -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Édpo Jorge | Kärcher</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Édpo Jorge | Product Owner LATAM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      background: #f5f5f5;
+      background: #f4f4f4;
       margin: 0;
-      padding: 0;
+      padding: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
     .card {
-      background: #fff;
+      background: white;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      padding: 30px;
+      padding: 32px;
       max-width: 420px;
       width: 100%;
-      border-left: 10px solid #ffd500;
+      position: relative;
+      border-left: 10px solid #FFD500;
     }
-    .logo {
-      width: 120px;
+    .card img.logo {
+      width: 110px;
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 22px;
       margin: 0;
+      font-size: 24px;
     }
-    h2 {
-      font-size: 15px;
-      font-weight: 500;
-      color: #444;
-      margin: 5px 0 20px;
+    .role {
+      color: #666;
+      margin-bottom: 24px;
     }
     .info {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-    .info a {
-      color: #0073b1;
+    .info svg {
+      margin-right: 10px;
+      fill: #333;
+    }
+    a {
+      color: #0070f3;
       text-decoration: none;
-      font-size: 14px;
     }
-    .socials {
+    .buttons {
       display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
+      gap: 12px;
+      margin-top: 24px;
     }
-    .socials a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
+    .btn {
       flex: 1;
-      margin: 0 5px;
-      border-radius: 12px;
-      color: white;
+      padding: 12px 0;
+      border-radius: 8px;
       font-weight: 600;
-      font-size: 14px;
+      text-align: center;
+      color: white;
       text-decoration: none;
     }
-    .whatsapp { background: #25D366; }
-    .message { background: #4285F4; }
-    svg { margin-right: 6px; min-width: 16px; }
+    .btn.whatsapp {
+      background-color: #25D366;
+    }
+    .btn.message {
+      background-color: #3b82f6;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Karcher-Logo.svg/2560px-Karcher-Logo.svg.png" alt="Kärcher Logo" class="logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/K%C3%A4rcher_Logo.svg" alt="Kärcher Logo" class="logo">
     <h1>Édpo Jorge</h1>
-    <h2>Product Owner | BI & IA LATAM</h2>
+    <div class="role">Product Owner for Automation, Data Science & AI LATAM</div>
 
     <div class="info">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-envelope" viewBox="0 0 16 16"><path d="..."/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.708 2.826L15 11.117V5.383zM14.803 12H1.197l4.708-2.827L8 10.583l2.095-1.41L14.803 12zM1 11.117l4.708-2.908L1 5.383v5.734z"/>
+      </svg>
       <a href="mailto:edpo.jorge@karcher.com">edpo.jorge@karcher.com</a>
     </div>
+
     <div class="info">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0A66C2" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="..."/></svg>
-      <a href="https://www.linkedin.com/in/edpojorge" target="_blank">/edpojorge</a>
-    </div>
-    <div class="info">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#E1306C" class="bi bi-instagram" viewBox="0 0 16 16"><path d="..."/></svg>
-      <a href="https://www.instagram.com/j.b_ed?igsh=MXAwMmI1Yjh4b3Jybw==" target="_blank">@j.b_ed</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.324 0 .725 0h14.55c.401 0 .725.513.725 1.146v13.708c0 .633-.324 1.146-.725 1.146H.725A.723.723 0 0 1 0 14.854V1.146zM4.943 13V6.169H2.542V13h2.401zM3.743 5.066c.837 0 1.353-.554 1.353-1.248-.015-.708-.516-1.247-1.337-1.247-.822 0-1.353.54-1.353 1.247 0 .694.516 1.248 1.321 1.248h.016zM13.458 13v-3.631c0-1.937-1.036-2.837-2.415-2.837-1.112 0-1.607.612-1.886 1.04v-0.89H6.756c.03.588 0 6.349 0 6.349h2.401v-3.548c0-.189.014-.377.069-.512.153-.377.503-.768 1.091-.768.771 0 1.079.579 1.079 1.427V13h2.062z"/>
+      </svg>
+      <a href="https://www.linkedin.com/in/edpojorge">/edpojorge</a>
     </div>
 
-    <div class="socials">
-      <a href="https://wa.me/5511956565659" class="whatsapp" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="..."/></svg>
-        WhatsApp
-      </a>
-      <a href="mailto:edpo.jorge@karcher.com" class="message" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chat-left-dots" viewBox="0 0 16 16"><path d="..."/></svg>
-        Message
-      </a>
+    <div class="info">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zM8 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045z"/>
+        <path d="M11.77 4.77a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zM8 5.888a2.11 2.11 0 1 0 0 4.221 2.11 2.11 0 0 0 0-4.222z"/>
+      </svg>
+      <a href="https://www.instagram.com/j.b_ed">@j.b_ed</a>
+    </div>
+
+    <div class="buttons">
+      <a href="https://wa.me/5511956565659" class="btn whatsapp">WhatsApp</a>
+      <a href="mailto:edpo.jorge@karcher.com" class="btn message">Message</a>
     </div>
   </div>
 </body>
