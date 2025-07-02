@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cartão de Visita | Éd Jorge</title>
+  <title>Éd Jorge | Business Card</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,39 +12,80 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
+
     .card {
       background: #ffffff;
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 24px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.15);
-      max-width: 400px;
-      width: 100%;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
     }
+
+    .card img {
+      max-width: 150px;
+      margin-bottom: 16px;
+    }
+
     .card h2 {
-      margin-top: 0;
+      margin: 0 0 12px;
+      font-size: 24px;
     }
+
     .card p {
       margin: 4px 0;
+      font-size: 16px;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 16px;
-      background-color: #0078d4;
+
+    .label {
+      font-weight: bold;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 18px;
+      padding: 12px 20px;
+      background-color: #25D366;
       color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn-whatsapp svg {
+      margin-right: 8px;
+    }
+
+    a {
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <img src="https://raw.githubusercontent.com/Edpoj/Edpoj.github.io/main/logo-karcher.png" alt="Kärcher Logo" />
     <h2>Éd Jorge</h2>
-    <p><strong>Cargo:</strong> Coordenador de BI LATAM</p>
-    <p><strong>Email:</strong> edpo.jorge@karcher.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/edpojorge" target="_blank">/edpojorge</a></p>
-    <a class="btn" href="https://wa.me/5511999999999" target="_blank">Chamar no WhatsApp</a>
+    <p><span class="label">Role:</span> Product Owner for Automation, Data Science & AI LATAM</p>
+    <p><span class="label">Email:</span> edpo.jorge@karcher.com</p>
+    <p><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/edpojorge" target="_blank">/edpojorge</a></p>
+    <a class="btn-whatsapp" href="https://wa.me/5511956565659" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 32 32" fill="white">
+        <path d="M16 0C7.164 0 0 7.164 0 16c0 2.829.738 5.49 2.016 7.823L0 32l8.421-2.185C11.09 31.234 13.49 32 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.48c-2.205 0-4.32-.593-6.175-1.629l-.441-.263-4.998 1.296 1.336-4.878-.285-.459C3.768 21.12 3.11 18.6 3.11 16c0-7.1 5.79-12.89 12.89-12.89S28.89 8.9 28.89 16 23.1 28.89 16 28.89zM23.485 20.066c-.356-.178-2.105-1.04-2.43-1.16-.324-.119-.56-.178-.796.178s-.914 1.16-1.122 1.396c-.207.237-.412.267-.768.089-.356-.178-1.504-.553-2.864-1.76-1.058-.945-1.773-2.112-1.98-2.468-.207-.356-.022-.548.156-.726.16-.159.356-.412.533-.622.178-.208.237-.356.356-.593.119-.237.06-.445-.03-.623-.089-.178-.796-1.92-1.09-2.625-.285-.685-.576-.59-.796-.602l-.678-.012c-.237 0-.623.089-.95.445-.324.356-1.238 1.21-1.238 2.955s1.266 3.426 1.441 3.663c.178.237 2.482 3.79 6.017 5.314 2.145.926 2.985 1.008 4.058.848.652-.097 2.105-.859 2.403-1.688.296-.83.296-1.542.207-1.688-.09-.148-.324-.237-.68-.415z"/>
+      </svg>
+      WhatsApp Me
+    </a>
   </div>
 </body>
 </html>
